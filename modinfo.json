@@ -1,0 +1,10 @@
+{
+    "id": "zohnannor.nohiddenpipes",
+    "name": "No Hidden Pipes",
+    "version": "1.0.0",
+    "target_game_version": "v1.11.8",
+    "authors": "zohnannor",
+    "description": "Makes all hidden pipes visible.",
+    "requirements": [],
+    "requirements_names": []
+}

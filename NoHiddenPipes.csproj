@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="lib/Assembly-CSharp-firstpass.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/BepInEx.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/HOOKS-Assembly-CSharp.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/PUBLIC-Assembly-CSharp.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/Mono.Cecil.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/Mono.Cecil.Rocks.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/MonoMod.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/MonoMod.RuntimeDetour.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/MonoMod.Utils.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/UnityEngine.CoreModule.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="lib/UnityEngine.dll">
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(RainWorldDir)')">
+        <MakeDir Directories="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/NoHiddenPipes/plugins" />
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/NoHiddenPipes/plugins" />
+        <Copy SourceFiles="modinfo.json" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/NoHiddenPipes" />
+        <Copy SourceFiles="thumbnail.png" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/NoHiddenPipes" />
+    </Target>
+
+</Project>

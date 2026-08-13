@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <RainWorldDir>/home/zohnannor/.steam/steam/steamapps/common/Rain World</RainWorldDir>
+    </PropertyGroup>
+</Project>

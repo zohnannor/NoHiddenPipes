@@ -1,0 +1,5 @@
+bin/
+obj/
+lib/
+
+Directory.Build.props
