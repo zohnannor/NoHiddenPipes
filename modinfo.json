@@ -1,10 +1,10 @@
 {
     "id": "zohnannor.nohiddenpipes",
     "name": "No Hidden Pipes",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "target_game_version": "v1.11.8",
     "authors": "zohnannor",
-    "description": "Makes all hidden pipes visible.\n\nWorks with any modded content.\n\nYou can toggle the functionality in the Remix menu so that you don't need to restart your game.\n\nhttps://github.com/zohnannor/NoHiddenPipes",
+    "description": "Makes all hidden pipes visible.\n\nOptions:\n\n- Show hidden pipes (on by default)\n- Show hidden dead-ends (off by default)\n- Show broken shelters (on by default)\n\nWorks with any modded content.\n\nYou can toggle the functionality in the Remix menu so that you don't need to restart your game.\n\nhttps://github.com/zohnannor/NoHiddenPipes",
     "requirements": [],
     "requirements_names": []
 }
